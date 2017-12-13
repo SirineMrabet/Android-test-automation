@@ -1,0 +1,120 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 28938798001,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Add expenses then select a category",
+        "description": "",
+        "id": "add-expense;add-expenses-then-select-a-category;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 672902,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4241855325,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I\u0027m in the page adding expenses",
+            "match": {
+              "location": "AddExpenses.i_m_in_the_page_adding_expenses()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1792175336,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add expense",
+            "match": {
+              "location": "AddExpenses.iAddExpense()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 492216404,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I select a Breakfast",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Breakfast",
+                  "offset": 11
+                }
+              ],
+              "location": "AddExpenses.iSelectACategory(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 464057,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "New \u003cexpense\u003e is added in the specified Breakfast",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cexpense\u003e",
+                  "offset": 4
+                },
+                {
+                  "val": "Breakfast",
+                  "offset": 40
+                }
+              ],
+              "location": "AddExpenses.ThenNewExpenseIsAddedInTheSpecifiedCategory(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@stable"
+          }
+        ]
+      }
+    ],
+    "name": "Add expense",
+    "description": "As a User of CoCoin, I can add an expense",
+    "id": "add-expense",
+    "keyword": "Feature",
+    "uri": "AddExpenses.feature"
+  }
+]
